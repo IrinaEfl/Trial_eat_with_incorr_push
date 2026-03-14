@@ -12,7 +12,7 @@ let interval;
 async function loadCarouselData() {
   try {
     const { data, error } = await supabaseClient
-      .from('carousel_items')
+      .from('carousel-item')
       .select('*')
       .eq('is_active', true)
       .order('order', { ascending: true });
