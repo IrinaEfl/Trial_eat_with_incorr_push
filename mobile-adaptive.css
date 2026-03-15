@@ -1,13 +1,9 @@
-/* ========================= */
-/* MOBILE ADAPTIVE - ОТДЕЛЬНЫЙ ФАЙЛ */
-/* ========================= */
-
 @media (max-width: 768px) {
   .container {
     padding: 0 20px;
   }
 
-  /* Header */
+
   .header {
     height: auto;
     padding: 15px 0;
@@ -40,7 +36,7 @@
     height: 36px;
   }
 
-  /* Blocks Height */
+
   .block-1,
   .block-2,
   .block-3,
@@ -50,17 +46,13 @@
     padding: 40px 0;
   }
 
-  /* Block 1 */
+
   .block-1 {
     display: flex;
     align-items: center;
     justify-content: center;
     text-align: center;
     min-height: 350px;
-  }
-  /* Убираем фон на мобилках, если не нужен */
-  .block1-with-bg {
-    background-image: none;
   }
 
   .block1-content {
@@ -147,7 +139,7 @@
     padding: 15px;
   }
 
-  /* Block 3 */
+
   .block-3 {
     text-align: center;
   }
@@ -179,7 +171,7 @@
     width: 100%;
     text-align: center;
     margin-bottom: 20px;
-    color: var(--primary-purple, #6635E4); /* Фиолетовый цвет */
+    color: var(--primary-purple, #6635E4); 
     font-weight: 500;
     word-break: break-word;
   }
@@ -229,7 +221,7 @@
     background: var(--primary-purple, #6635E4);
     padding: 15px;
     box-sizing: border-box;
-    filter: brightness(0) invert(1); /* Делает иконку белой */
+    filter: brightness(0) invert(1); 
   }
 
   .small-photo:last-child {
@@ -294,7 +286,7 @@
     opacity: 0.9;
   }
 
-  /* Carousel */
+
   .carousel-container {
     margin-top: 20px;
     position: relative;
@@ -313,7 +305,7 @@
   .carousel-track {
     display: flex;
     align-items: center;
-    justify-content: flex-start;
+    justify-content: center;
     gap: 0;
     width: 100%;
     overflow-x: auto;
@@ -337,6 +329,9 @@
     margin: 0 -5%;
     position: relative;
     z-index: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
 
   .carousel-slide:first-child {
@@ -362,13 +357,13 @@
   .carousel-slide img {
     width: 100%;
     height: auto;
+    max-width: 300px;
     border-radius: 20px;
     object-fit: cover;
   }
 
   .active img {
-    width: 100%;
-    height: auto;
+    max-width: 350px;
     box-shadow: 0 15px 25px rgba(0,0,0,0.3);
   }
 
@@ -378,9 +373,11 @@
     justify-content: space-between;
     font-size: 14px;
     padding: 0 10px;
+    width: 100%;
+    max-width: 300px;
   }
 
-  /* Block 5 */
+
   .block-5 {
     text-align: center;
     position: relative;
@@ -464,7 +461,7 @@
     left: auto;
   }
 
-  /* Footer */
+ 
   .footer {
     height: auto;
     padding: 20px 0;
@@ -477,7 +474,7 @@
     text-align: center;
     align-items: center;
     padding: 10px 20px;
-    padding-bottom: 40px; /* Место для копирайта */
+    padding-bottom: 40px; 
     position: relative;
   }
 
@@ -525,7 +522,7 @@
   }
 }
 
-/* Для очень маленьких экранов */
+
 @media (max-width: 480px) {
   .title {
     font-size: 48px;
@@ -553,6 +550,18 @@
 
   .carousel-slide:last-child {
     margin-right: 10%;
+  }
+
+  .carousel-slide img {
+    max-width: 250px;  /* Еще меньше для маленьких экранов */
+  }
+
+  .active img {
+    max-width: 280px;
+  }
+
+  .slide-caption {
+    max-width: 250px;
   }
 
   .card {
