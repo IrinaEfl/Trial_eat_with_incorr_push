@@ -289,6 +289,7 @@
 
   .carousel-container {
     margin-top: 20px;
+    margin-bottom: 40px;
     position: relative;
     display: flex;
     justify-content: center;
@@ -324,7 +325,6 @@
     flex: 0 0 70%;
     scroll-snap-align: center;
     opacity: 0.5;
-    transform: scale(0.8);
     transition: all 0.3s ease;
     margin: 0;
     position: relative;
@@ -344,20 +344,19 @@
 
   .carousel-slide.active {
     opacity: 1;
-    transform: scale(1);
     z-index: 10;
   }
 
   .carousel-slide:not(.active) {
     filter: brightness(0.5);
-    transform: scale(0.7);
+    transform: scale(0.85);
     z-index: 0;
   }
 
   .carousel-slide img {
     width: 100%;
     height: auto;
-    max-width: 300px;
+    max-width: 280px;
     border-radius: 20px;
     object-fit: cover;
   }
