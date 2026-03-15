@@ -311,6 +311,7 @@ body {
   background-color: var(--primary-purple);
   color: var(--text-light);
   padding-top: 40px;
+  padding-bottom: 64px;
 }
 
 .block4-title {
