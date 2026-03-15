@@ -9,6 +9,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Aclonica&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&family=Onest:wght@100..900&family=Orbitron:wght@400..900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="mobile-adaptive.css">
 
 </head>
 <body>
@@ -31,7 +32,7 @@
 
   <main>
     
-    <section class="block block-1">
+    <section class="block block-1 block1-with-bg">
       <div class="container block1-content">
         <div class="title">EAT!</div>
         <div class="block1-sub">Онлайн заказ и доставка еды в Санкт-Петербурге</div>
@@ -47,7 +48,7 @@
           <div class="block2-sub">— Приложение, которое объединило лучшее, что есть в мире:</div>
         </div>
         <div class="block2-flex">
-          <img src="images/Black.png" alt="tel" class="phone-mock">
+          <img src="images/Blakk.png" alt="tel" class="phone-mock">
           <div class="mascot-area">
             <img src="images/Group 618.png" alt="mascot" class="mascot-photo">
             <div class="mascot-text">Зарабатывайте на посещениях ресторанов и заказе доставки +10% от каждого заказа на ваш счет!</div>
@@ -82,7 +83,7 @@
 
         <div class="bonus-line">Получайте дополнительные баллы за репосты, опросы и многое другое.</div>
 
-        <div style="white-space: nowrap;">
+        <div class="bonus-action-wrapper">
           <div class="purple-rect">Копите баллы и оплачивайте ими:</div>
           <div class="two-photos">
             <img src="images/Group 619.png" alt="40perc" class="small-photo">
@@ -123,6 +124,7 @@
           <div class="carousel-track" id="carouselTrack"></div>
           <button class="carousel-btn" id="nextBtn">→</button>
         </div>
+        <script src="supabase.js"></script>
         <script src="carousel.js"></script>
       </div>
     </section>
@@ -141,7 +143,7 @@
         </div>
         <div class="block5-right">
           <img src="images/Group 591.png" alt="heart_black" class="mascot-bottom">
-          <img src="images/Mockup.png" alt="tel_large"class="phone-mock-right">
+          <img src="images/Mock.png" alt="tel_large"class="phone-mock-right">
         </div>
       </div>
     </section>
