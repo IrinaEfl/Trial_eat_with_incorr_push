@@ -144,7 +144,7 @@
       </div>
     </section>
 
-    <!-- НОВЫЙ БЛОК: ФОРМА ОБРАТНОЙ СВЯЗИ (перед футером) -->
+    <!-- форма -->
     <section class="feedback-section">
       <div class="feedback-container">
         <div class="feedback-header">
@@ -158,7 +158,7 @@
             </div>
             <div class="input-group">
               <label for="phone">Контактная почта</label>
-              <input type="tel" id="phone" name="phone" placeholder="eat@gmail.com" required>
+              <input type="tel" id="phone" name="phone" placeholder="например, eat@gmail.com" required>
             </div>
             <div class="form-footer">
               <button type="submit" class="submit-btn">Отправить заявку</button>
@@ -189,29 +189,8 @@
     </div>
   </footer>
 
-  <!-- Скрипты -->
   <script src="supabase.js"></script>
   <script src="carousel.js"></script>
-  <script>
-    // Обработка отправки формы
-    const form = document.getElementById('partnerForm');
-    if (form) {
-      form.addEventListener('submit', function(e) {
-        e.preventDefault();
-        const name = document.getElementById('name').value.trim();
-        const phone = document.getElementById('phone').value.trim();
-        
-        if (!name || !phone) {
-          alert('Пожалуйста, заполните все поля');
-          return;
-        }
-        
-        // Имитация отправки данных
-        console.log('Форма отправлена:', { name, phone });
-        alert(`Спасибо, ${name}! Ваша заявка принята. Мы свяжемся с вами в ближайшее время.`);
-        form.reset();
-      });
-    }
-  </script>
+  <script src="feedback.js"></script>
 </body>
 </html>
