@@ -4,12 +4,17 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
   <title>Eat! | Доставка еды в Санкт-Петербурге</title>
+
+  <link rel="icon" type="image/png" sizes="64x64" href="images/Group 560.png">
+  
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Aclonica&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&family=Onest:wght@100..900&family=Orbitron:wght@400..900&display=swap" rel="stylesheet">
+  
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="mobile-adaptive.css">
+  
 </head>
 <body>
   <header class="header">
@@ -144,7 +149,7 @@
       </div>
     </section>
 
-    <!-- НОВЫЙ БЛОК: ФОРМА ОБРАТНОЙ СВЯЗИ (перед футером) -->
+    <!-- форма -->
     <section class="feedback-section">
       <div class="feedback-container">
         <div class="feedback-header">
@@ -158,7 +163,7 @@
             </div>
             <div class="input-group">
               <label for="phone">Контактная почта</label>
-              <input type="tel" id="phone" name="phone" placeholder="eat@gmail.com" required>
+              <input type="tel" id="phone" name="phone" placeholder="например, eat@gmail.com" required>
             </div>
             <div class="form-footer">
               <button type="submit" class="submit-btn">Отправить заявку</button>
@@ -189,29 +194,8 @@
     </div>
   </footer>
 
-  <!-- Скрипты -->
   <script src="supabase.js"></script>
   <script src="carousel.js"></script>
-  <script>
-    // Обработка отправки формы
-    const form = document.getElementById('partnerForm');
-    if (form) {
-      form.addEventListener('submit', function(e) {
-        e.preventDefault();
-        const name = document.getElementById('name').value.trim();
-        const phone = document.getElementById('phone').value.trim();
-        
-        if (!name || !phone) {
-          alert('Пожалуйста, заполните все поля');
-          return;
-        }
-        
-        // Имитация отправки данных
-        console.log('Форма отправлена:', { name, phone });
-        alert(`Спасибо, ${name}! Ваша заявка принята. Мы свяжемся с вами в ближайшее время.`);
-        form.reset();
-      });
-    }
-  </script>
+  <script src="feedback.js"></script>
 </body>
 </html>
