@@ -1,516 +1,680 @@
-@media (max-width: 768px) {
-  .container {
-    padding: 0 20px;
-  }
-
-  .header {
-    height: auto;
-    padding: 15px 0;
-  }
-
-  .header-container {
-    flex-direction: column;
-    gap: 15px;
-  }
-
-  .header-right {
-    text-align: center;
-  }
-
-  .header-right a {
-    font-size: 16px;
-  }
-
-  .site-name {
-    font-size: 24px;
-  }
-
-  .store-badges {
-    justify-content: center;
-    align-items: center;
-  }
-
-  .store-badges .store-photo {
-    width: 120px;
-    height: 36px;
-  }
-
-  .block-1,
-  .block-2,
-  .block-3,
-  .block-4,
-  .block-5 {
-    height: auto;
-    padding: 40px 0;
-  }
-
-  .block-1 {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    min-height: 350px;
-  }
-
-  .block1-content {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-  }
-
-  .title {
-    font-size: 64px;
-    margin-bottom: 15px;
-  }
-
-  .block1-sub {
-    font-size: 20px;
-    margin-bottom: 20px;
-    max-width: 90%;
-  }
-
-  .block1-banner {
-    font-size: 18px;
-    max-width: 90%;
-  }
-
-  .block-2 {
-    text-align: center;
-  }
-
-  .block2-header {
-    padding-top: 0;
-    text-align: center;
-    margin-bottom: 30px;
-  }
-
-  .block2-title {
-    font-size: 32px;
-    text-align: center;
-  }
-
-  .block2-title span {
-    font-size: 32px;
-    display: inline-block;
-  }
-
-  .block2-sub {
-    font-size: 18px;
-    margin-bottom: 30px;
-    text-align: center;
+/* ===== АДАПТИВ 870 ===== */
+img {
     max-width: 100%;
-  }
-
-  .block2-flex {
-    flex-direction: column;
-    align-items: center;
-    gap: 30px;
-  }
-
-.phone-mock {
-  width: 100%;
-  max-width: 280px;
-  margin: 0 auto;
-  margin-bottom: -40px; /* отрицательный отступ, чтобы выйти за пределы */
-  order: 2;
-  display: block;
-  position: relative;
-  bottom: 0;
+    height: auto;
 }
 
-  .mascot-area {
-    align-items: center;
-    width: 100%;
-    order: 1;
-  }
+@media (min-width: 1240px) {
 
-  .mascot-photo {
-    height: 200px;
-    margin-bottom: 15px;
+    .small-photo{
+      padding-bottom: 24px;
+    }
+     .phone-mock {
+    padding-top: 30vw;
   }
 
   .mascot-text {
-    font-size: 18px;
-    text-align: center;
-    max-width: 100%;
-    padding: 15px;
-  }
+        text-align: left;
+    }
 
-  .block-3 {
-    text-align: center;
-  }
-
-  .block3-title {
-    font-size: 28px;
-    margin-bottom: 30px;
-    text-align: center;
-  }
-
-  .cards-row {
-    flex-direction: column;
-    gap: 15px;
-    margin-bottom: 30px;
-  }
-
-  .card {
-    margin: 0 auto;
-    max-width: 350px;
-    width: 100%;
-  }
-
-  .card-text {
-    font-size: 18px;
-  }
-
-  .bonus-line {
-    font-size: 14px;
-    width: 100%;
-    text-align: center;
-    margin-bottom: 20px;
-    color: var(--primary-purple, #6635E4);
-    font-weight: 500;
-    word-break: break-word;
-  }
-
-  .bonus-action-wrapper {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 20px;
-  }
-
-  .two-photos {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 15px;
-  }
-
-  .small-photo {
-    width: 100%;
-    max-width: 250px;
+.mascot-photo {
+    margin-right: 28vw;
+    width: 550px;
     height: auto;
   }
 
-  .purple-rect {
-    font-size: 20px;
-    padding: 15px 20px;
-    min-width: auto;
-    width: 100%;
-    max-width: 280px;
-    margin: 0 auto;
-    background: var(--primary-purple, #6635E4);
-    color: white;
-    border-radius: 80px;
-    line-height: 1.4;
-    text-align: center;
-    display: block;
+
   }
 
-  .block-4 {
-    text-align: center;
-  }
+@media (max-width: 1240px) {
+  .mascot-bottom {
+        position: relative;  /* или static */
+        width: 400px;
+        height: auto;
+        margin: 10hv auto;
+        display: block;
+    }
 
-  .block4-title {
-    font-size: 28px;
-    margin-bottom: 20px;
-  }
+    .small-photo{
+      padding-bottom: 24px;
+    }
 
-  .partner-row {
-    display: flex;
-    flex-direction: row;
-    overflow-x: auto;
-    gap: 10px;
-    padding: 10px 0 15px;
-    scroll-snap-type: x mandatory;
-    -webkit-overflow-scrolling: touch;
-    scrollbar-width: none;
-  }
-
-  .partner-row::-webkit-scrollbar {
-    display: none;
-  }
-
-  .partner-card {
-    flex: 0 0 280px;
-    scroll-snap-align: center;
-    padding: 15px;
-  }
-
-  .partner-photo {
-    width: 100%;
-    height: 140px;
-    border-radius: 25px;
-    object-fit: cover;
-    margin-bottom: 10px;
-  }
-
-  .partner-card .partner-name,
-  .partner-card .partner-time {
-    display: inline-block;
-    font-size: 16px;
-    color: white;
-    white-space: nowrap;
-  }
-
-  .partner-card .partner-name {
-    font-weight: 600;
-    margin-right: 5px;
-  }
-
-  .carousel-container {
-    margin-top: 20px;
-    margin-bottom: 40px;
-    position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    overflow: visible;
-    padding: 30px 0;
-    width: 100%;
-  }
-
-  .carousel-btn {
-    display: none !important;
-  }
-
-  .carousel-track {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 0;
-    width: 100%;
-    overflow-x: auto;
-    scroll-snap-type: x mandatory;
-    -webkit-overflow-scrolling: touch;
-    padding: 20px 0;
-    scrollbar-width: none;
-    position: relative;
-  }
-
-  .carousel-track::-webkit-scrollbar {
-    display: none;
-  }
-
-  .carousel-slide {
-    flex: 0 0 70%;
-    scroll-snap-align: center;
-    opacity: 0.5;
-    transition: all 0.3s ease;
-    margin: 0;
-    position: relative;
-    z-index: 1;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .carousel-slide.active {
-    opacity: 1;
-    z-index: 10;
-  }
-
-  .carousel-slide:not(.active) {
-    filter: brightness(0.5);
-    transform: scale(0.85);
-    z-index: 0;
-  }
-
-  .carousel-slide img {
-    width: 100%;
-    height: auto;
-    max-width: 280px;
-    border-radius: 20px;
-    object-fit: cover;
-  }
-
-  .active img {
-    max-width: 350px;
-    box-shadow: 0 15px 25px rgba(0,0,0,0.3);
-  }
-
-  .slide-caption {
-    margin-top: 8px;
-    display: flex;
-    justify-content: space-between;
-    font-size: 14px;
-    padding: 0 10px;
-    width: 100%;
-    max-width: 280px;
-  }
-
-  .block-5 {
-    text-align: center;
-    position: relative;
-    min-height: 650px;
-  }
-
-  .block5-left {
-    float: none;
-    width: 100%;
-    text-align: center;
-    margin-bottom: 20px;
-  }
-
-  .block5-left h2 {
-    font-size: 28px;
-    margin-bottom: 10px;
-  }
-
-  .block5-left h3 {
-    font-size: 24px;
-    margin-bottom: 15px;
-  }
-
-  .block5-left h3 span {
-    font-size: 24px;
-    display: inline-block;
-  }
-
-  .block5-bonus {
-    font-size: 20px;
-    display: block;
-    margin: 0 0 20px;
-  }
-
-  .block5-bonus span {
-    font-size: 20px;
-  }
-
-  .two-photos-horizontal {
-    display: flex;
-    gap: 15px;
-    justify-content: center;
-    margin: 15px auto;
-    max-width: 280px;
-  }
-
-  .store-photo-large {
-    width: 130px;
+.mascot-photo {
+    margin-right: 32vw;
+    width: 550px;
     height: auto;
   }
 
-  .block5-right {
-    float: none;
-    width: 100%;
-    position: relative;
-    margin-top: 30px;
-    min-height: 350px;
+    .mascot-text {
+        text-align: left;
+    }
+
+  .phone-mock {
+    padding-top: 30vw;
   }
+
+
+}
+@media (max-width: 1180px) {
+  .mascot-bottom {
+        position: relative;  /* или static */
+        width: 400px;
+        height: auto;
+        display: block;
+        left: -500px;
+        padding-top: 30px;
+    }
 
   .phone-mock-right {
-    position: relative;
-    top: 0;
-    right: 0;
-    width: 100%;
-    height: auto;
-    max-width: 220px;
-    margin: 10px auto;
-    display: block;
-    object-fit: cover;
-    object-position: top;
+     width: 70vw;  /* 50% от ширины окна браузера */
+    height: 55vw;
+    margin-top: 10vh;
   }
 
+  .mascot-text {
+        text-align: left;
+    }
+
+    
+ .mascot-photo {
+    margin-right: 32vw;
+    width: 550px;
+    height: auto;
+  }
+
+
+}
+
+
+@media (max-width: 1150px) {
+     .mascot-photo {
+        height: 200px;
+        width: auto;
+    
+    }
+    .mascot-text {
+        text-align: left;
+    }
+
+    
+  .mascot-photo {
+    margin-right: 32vw;
+    width: 550px;
+    height: auto;
+  }
+
+     .phone-mock {
+    max-width: 60%;
+    padding-top: 25vw;
+    padding-left: 5vw;
+  }
+  
+  }
+
+@media (max-width: 933px) {
   .mascot-bottom {
-    display: block;
-    position: relative;
-    width: auto;
-    height: 180px;
-    margin: 15px auto;
-    z-index: 5;
-    top: auto;
-    left: auto;
+        position: relative;  /* или static */
+        width: 300px;
+        height: auto;
+        display: block;
+        padding-top: 100px;
+        left: -400px;
+    }
+
+    .phone-mock-right {
+     width: 70vw;  /* 50% от ширины окна браузера */
+    height: 55vw;
+    margin-top: 10vh;
   }
 
-  .footer {
-    height: auto;
-    padding: 20px 0;
-    min-height: auto;
-  }
-
-  .footer-container {
-    flex-direction: column;
-    gap: 12px;
-    text-align: center;
-    align-items: center;
-    padding: 10px 20px 40px 20px;
-    position: relative;
-  }
-
-  .footer-left {
-    justify-content: center;
-    margin-bottom: 0;
-    gap: 10px;
-  }
-
-  .footer-left .logo-photo {
-    width: 60px;
+.mascot-photo {
+    margin-right: 32vw;
+    width: 550px;
     height: auto;
   }
 
-  .footer-left .site-name {
-    font-size: 20px;
+  .phone-mock {
+    max-width: 60%;
+    padding-top: 31.5vw;
   }
 
-  .footer-center {
-    align-items: center;
-    gap: 8px;
-  }
+   
+    .mascot-text {
+        text-align: left;
+    }
 
-  .footer-center a {
-    font-size: 14px;
-  }
-
-  .footer-right {
-    align-items: center;
-    text-align: center;
-    gap: 8px;
-  }
-
-  .footer-right a {
-    font-size: 14px;
-  }
-
-  .footer-copyright {
-    position: absolute;
-    bottom: 10px;
-    left: 50%;
-    transform: translateX(-50%);
-    margin-top: 0;
-    font-size: 12px;
-  }
 }
 
+/* ===== АДАПТИВ 870px ===== */
+@media (max-width: 870px) {
+    .container {
+        padding: 0 30px;
+    }
+    
+    .title {
+        font-size: 72px;
+    }
+    
+    .block2-title {
+        font-size: 32px;
+    }
+    
+    .block3-title,
+    .block4-title {
+        font-size: 32px;
+    }
+    
+    .store-photo {
+        width: 140px;
+    }
+
+    .footer-container {
+      padding-top: 40px;
+    }
+
+    .footer-copyright {
+    top: 17ch;
+}
+    .mascot-bottom {
+        position: relative;  /* или static */
+        width: 300px;
+        left: -400px;
+        height: auto;
+        margin: 1vh auto;
+        display: block;
+    }
+
+     .phone-mock-right {
+     width: 70vw;  /* 50% от ширины окна браузера */
+    height: 55vw;
+    margin-top: 10vh;
+  }
+
+  .phone-mock {
+    max-width: 60%;
+    padding-top: 40vw;
+    margin-bottom: 0%;
+    padding-left: 0%;
+
+  }
+
+ 
+   .mascot-photo {
+    margin-right: 32vw;
+    width: 550px;
+    height: auto;
+  }
+
+ .mascot-area {
+        margin-right: 20px;
+        order: 1;
+        margin-right: 0%;
+    }
+
+}
+
+
+/* ===== АДАПТИВ 800px (ОСНОВНОЙ) ===== */
+@media (max-width: 800px) {
+    .container {
+        padding: 0 25px;
+        max-width: 100%;
+    }
+    
+    /* Шапка */
+    .header-container {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+        padding-top: 2vw;
+    }
+    
+    .header-left {
+        order: 1;
+    }
+    
+    .store-badges {
+        order: 2;
+    }
+    
+    .header-right {
+        order: 3;
+        display: flex;
+        gap: 20px;
+    }
+    
+    .header-right a {
+        font-size: 16px;
+    }
+    
+    .site-name {
+        font-size: 28px;
+    }
+    
+    .logo-photo {
+        width: 60px;
+        height: auto;
+    }
+    
+    .store-photo {
+        width: 120px;
+        height: auto;
+    }
+    
+    /* Блок 1 */
+    .block-1 {
+        height: auto;
+        min-height: 450px;
+        padding: 40px 0;
+    }
+    
+    .title {
+        font-size: 56px;
+    }
+    
+    .block1-sub {
+        font-size: 20px;
+    }
+    
+    .block1-banner {
+        font-size: 18px;
+    }
+    
+    /* Блок 2 */
+    .block2-header {
+        padding-top: 30px;
+    }
+    
+    .block2-title {
+        font-size: 32px;
+    }
+    
+    .block2-title span {
+        font-size: 32px;
+    }
+    
+    .block2-sub {
+        font-size: 18px;
+        margin-bottom: 30px;
+    }
+    
+    .block2-flex {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .phone-mock {
+        width: 280px;
+        margin-top: 0;
+        order: 2;
+    }
+    
+    .mascot-area {
+        align-items: center;
+        order: 1;
+        margin-right: 0%;
+    }
+    
+    .mascot-photo {
+    margin-right: 0vw;
+    width: 420px;
+    height: auto;
+  }
+    
+    .mascot-text {
+        font-size: 20px;
+        text-align: center;
+        padding: 20px;
+    }
+    
+    /* Блок 3 */
+    .block-3 {
+        padding-top: 30px;
+    }
+    
+    .block3-title {
+        font-size: 28px;
+        margin-bottom: 30px;
+        text-align: center;
+    }
+    
+    .cards-row {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+    
+    .card {
+        max-width: 400px;
+        width: 100%;
+    }
+    
+    .card-photo {
+        width: 80px;
+        height: 80px;
+    }
+    
+    .card-text {
+        font-size: 18px;
+    }
+    
+    .bonus-line {
+        font-size: 20px;
+        width: 100%;
+        text-align: center;
+    }
+    
+    .bonus-action-wrapper {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+    
+    .purple-rect {
+        font-size: 24px;
+        padding: 20px 30px;
+        min-width: auto;
+        text-align: center;
+    }
+    
+    .two-photos {
+        gap: 40px;
+    }
+    
+    .small-photo {
+        width: 180px;
+    }
+    
+    /* Блок 4 */
+    .block-4 {
+        padding: 30px 0 50px;
+    }
+    
+    .block4-title {
+        font-size: 28px;
+        text-align: center;
+    }
+    
+    .partner-row {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 15px;
+    }
+    
+    .partner-card {
+        padding: 15px;
+    }
+    
+    .partner-photo {
+        height: 120px;
+    }
+    
+    .partner-name {
+        font-size: 20px;
+    }
+    
+    .partner-time {
+        font-size: 16px;
+    }
+    
+    /* Карусель */
+    .carousel-container {
+        margin-top: 30px;
+    }
+    
+    .carousel-btn {
+        width: 40px;
+        height: 40px;
+        font-size: 24px;
+    }
+    
+    .active img {
+        width: 300px;
+        height: 200px;
+    }
+    
+    .carousel-slide:not(.active) img {
+        width: 140px;
+        height: 140px;
+    }
+    
+    /* Блок 5 */
+    .block-5 {
+        padding-top: 30px;
+    }
+    
+    .block5-left {
+        float: none;
+        width: 100%;
+        text-align: center;
+    }
+    
+    .block5-left h2 {
+        font-size: 32px;
+    }
+    
+    .block5-left h3 {
+        font-size: 24px;
+    }
+    
+    .block5-left h3 span {
+        font-size: 24px;
+    }
+    
+    .block5-bonus {
+        font-size: 20px;
+        max-width: 100%;
+    }
+    
+    .two-photos-horizontal {
+        justify-content: center;
+        width: 100%;
+    }
+    
+    .block5-right {
+        float: none;
+        width: 100%;
+        min-height: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .phone-mock-right {
+        position: static;
+        width: 250px;
+        height: auto;
+        margin-top: 20px;
+    }
+
+    .phone-mock {
+      width: 110%;
+      padding: 10px 0px 0px 0px;
+    }
+    
+    .mascot-bottom {
+        position: static;
+        width: 200px;
+        height: auto;
+        margin: 0 auto;
+    }
+    
+    /* Форма */
+    .feedback-section {
+        margin-top: 0;
+        padding: 40px 0;
+    }
+    
+    .feedback-header h2 {
+        font-size: 28px;
+    }
+    
+    .feedback-form-wrapper {
+        padding: 30px 25px;
+    }
+    
+    .submit-btn {
+        padding: 12px 30px;
+        font-size: 18px;
+    }
+
+  
+    
+    
+    /* Футер */
+    .footer-container {
+        flex-wrap: wrap;
+        gap: 20px;
+        justify-content: center;
+        text-align: center;
+        padding-bottom: 50px;
+        margin-top: 20px;
+        padding-top: 10px;
+    }
+    
+    .footer-left,
+    .footer-center,
+    .footer-right {
+        width: 100%;
+        justify-content: center;
+    }
+    
+    .footer-right {
+        text-align: center;
+    }
+    
+    .footer-center a,
+    .footer-right a {
+        font-size: 16px;
+    }
+
+      .footer-copyright {
+    top: 30ch;
+}
+
+
+
+}
+
+/* ===== АДАПТИВ 600px ===== */
+@media (max-width: 600px) {
+    .partner-row {
+        grid-template-columns: 1fr;
+    }
+    
+    .header-container{
+        padding-top: 2vw;
+    }
+
+    .title {
+        font-size: 44px;
+    }
+    
+    .block1-sub {
+        font-size: 18px;
+    }
+    
+    .block2-title,
+    .block2-title span {
+        font-size: 28px;
+    }
+    
+    .purple-rect {
+        font-size: 18px;
+        padding: 15px 20px;
+    }
+    
+    .small-photo {
+        width: 140px;
+    }
+
+    .mascot-photo {
+    margin-right: 5vw;
+    width: 350px;
+    height: auto;
+  }
+    
+}
+
+/* ===== АДАПТИВ 480px ===== */
 @media (max-width: 480px) {
-  .footer {
-    padding: 10px 0;
+    .container {
+        padding: 0 15px;
+    }
+
+    .header-container{
+        padding-top: 2vw;
+        max-height: 30vw;
+    }
+    
+    .title {
+        font-size: 36px;
+    }
+    
+    .block1-sub {
+        font-size: 16px;
+    }
+    
+    .block1-banner {
+        font-size: 14px;
+    }
+    
+    .store-photo {
+        width: 100px;
+    }
+    
+    .mascot-photo {
+        height: 150px;
+    }
+    
+    .mascot-text {
+        font-size: 16px;
+    }
+    
+    .card-text {
+        font-size: 16px;
+    }
+    
+    .bonus-line {
+        font-size: 16px;
+    }
+    
+    .block5-left h2 {
+        font-size: 24px;
+    }
+    
+    .block5-left h3 {
+        font-size: 20px;
+    }
+    
+    .phone-mock-right {
+        width: 200px;
+    }
+    
+    .feedback-header h2 {
+        font-size: 22px;
+    }
+    
+    .submit-btn {
+        padding: 5px;
+        font-size: 16px;
+    }
+    
+    .footer-center a,
+    .footer-right a {
+        font-size: 14px;
+
+    }
+
+    .mascot-photo {
+    margin-right: 5vw;
+    width: 250px;
+    height: auto;
   }
 
-  .footer-container {
-    gap: 8px;
-    padding: 10px 20px 30px 20px;
-  }
 
-  .footer-left .logo-photo {
-    width: 35px;
-  }
-
-  .footer-left .site-name {
-    font-size: 16px;
-  }
-
-  .footer-center a {
-    font-size: 12px;
-  }
-
-  .footer-right a {
-    font-size: 10px;
-  }
-
-  .footer-copyright {
-    font-size: 9px;
-    bottom: 8px;
-  }
-}
+      .footer-copyright {
+    top: 26ch;
+  
+  }}
