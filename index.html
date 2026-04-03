@@ -15,18 +15,7 @@
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="mobile-adaptive.css">
   
-  <style>
-    /* Глобальное отключение перетаскивания для всех картинок и ссылок */
-    img, a {
-      user-drag: none;
-      -webkit-user-drag: none;
-      user-select: none;
-    }
-    img {
-      pointer-events: auto;
-      draggable: false;
-    }
-  </style>
+  
 </head>
 <body>
   <header class="header">
@@ -51,17 +40,17 @@
   </header>
 
   <main>
-    <!-- Блок 1 -->
+
     <section class="block block-1 block1-with-bg">
       <div class="container block1-content">
-        <div class="title">EAT!</div>
-        <div class="block1-sub">Онлайн заказ и доставка еды в Санкт-Петербурге</div>
-        <div class="block1-banner">Все скидки и акции от ресторанов в одном месте на сервисе Eat! зарабатывайте со вкусом</div>
+        <div class="title">Eat!</div>
+        <div class="block1-sub">Онлайн заказ и доставка еды <br> в Санкт-Петербурге</div>
+        <div class="block1-banner">Все скидки и акции от ресторанов в одном месте на сервисе Eat!</div>
       </div>
     </section>
 
-    <!-- Блок 2 -->
-    <section class="block block-2">
+    
+    <section class="block block-2" id="about">
       <div class="container">
         <div class="block2-header">
           <div class="block2-title">Что такое <span>Eat?</span></div>
@@ -77,8 +66,8 @@
       </div>
     </section>
 
-    <!-- Блок 3 -->
-    <section class="block block-3">
+    
+    <section class="block block-3" id="work">
       <div class="container">
         <div class="block3-title">Как работает приложение?</div>
 
@@ -112,31 +101,11 @@
       </div>
     </section>
 
-    <!-- Блок 4 -->
-    <section class="block block-4">
+    
+    <section class="block block-4" id="partner">
       <div class="container">
         <div class="block4-title">Наши партнеры:</div>
         <div class="partner-row">
-          <div class="partner-card">
-            <img src="images/v368_514.png" alt="5ka" class="partner-photo" draggable="false">
-            <div class="partner-name">Пятерочка</div>
-            <div class="partner-time">15-20 мин</div>
-          </div>
-          <div class="partner-card">
-            <img src="images/v368_523.png" alt="perec" class="partner-photo" draggable="false">
-            <div class="partner-name">Перекресток</div>
-            <div class="partner-time">25-30 мин</div>
-          </div>
-          <div class="partner-card">
-            <img src="images/v368_530.png" alt="magn" class="partner-photo" draggable="false">
-            <div class="partner-name">Магнит</div>
-            <div class="partner-time">1ч.</div>
-          </div>
-          <div class="partner-card">
-            <img src="images/v368_536.png" alt="lenta" class="partner-photo" draggable="false">
-            <div class="partner-name">Лента</div>
-            <div class="partner-time">1-15ч.</div>
-          </div>
         </div>
         <div class="carousel-container">
           <button class="carousel-btn" id="prevBtn">←</button>
@@ -146,7 +115,7 @@
       </div>
     </section>
 
-    <!-- Блок 5 -->
+    
     <section class="block block-5 clearfix">
       <div class="container">
         <div class="block5-left">
@@ -169,7 +138,7 @@
       </div>
     </section>
 
-    <!-- форма -->
+    
     <section class="feedback-section">
       <div class="feedback-container">
         <div class="feedback-header">
@@ -201,9 +170,9 @@
         <div class="site-name">Eat!</div>
       </div>
       <div class="footer-center">
-        <a href="#block1">о нас</a>
-        <a href="#block3">принцип работы</a>
-        <a href="#block2">бонусы</a>
+        <a href="#about">о нас</a>
+        <a href="#work">принцип работы</a>
+        <a href="##partner">бонусы</a>
       </div>
       <div class="footer-right">
         <a href="#">support@eat.ru</a>
@@ -215,13 +184,13 @@
   </footer>
 
   <script src="supabase.js"></script>
+  <script src="partners.js"></script>
   <script src="carousel.js"></script>
   <script src="feedback.js"></script>
 
   <script>
-    // ПОЛНОЕ ОТКЛЮЧЕНИЕ ПЕРЕТАСКИВАНИЯ КАРТИНОК
+    
     (function disableDrag() {
-        // Отключаем для всех существующих картинок и ссылок
         document.querySelectorAll('img, a').forEach(el => {
             el.setAttribute('draggable', 'false');
             el.ondragstart = function(e) {
@@ -230,7 +199,6 @@
             };
         });
         
-        // Глобальный перехватчик для новых элементов
         window.addEventListener('dragstart', function(e) {
             if (e.target.tagName === 'IMG' || e.target.tagName === 'A' || e.target.parentElement?.tagName === 'A') {
                 e.preventDefault();
@@ -238,11 +206,9 @@
             }
         });
         
-        // Отключаем выделение изображений
         document.querySelectorAll('img').forEach(img => {
             img.addEventListener('selectstart', (e) => e.preventDefault());
             img.addEventListener('mousedown', (e) => {
-                // Не мешаем нормальным кликам по ссылкам
                 if (!img.closest('a')) {
                     e.preventDefault();
                 }

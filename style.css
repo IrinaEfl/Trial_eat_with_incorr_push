@@ -1,4 +1,4 @@
-html, body {
+body {
     margin: 0;
     padding: 0;
     overflow-x: hidden;
@@ -12,7 +12,6 @@ html, body {
     padding: 0;
 }
 
-/* Просто растягиваем фон */
 .block-2 .container,
 .block-4 .container {
     max-width: 1728px;
@@ -20,24 +19,20 @@ html, body {
     padding: 0 40px;
 }
 
-/* Для формы свой контейнер */
 .feedback-section .feedback-container {
     max-width: 1200px;
     margin: 0 auto;
     padding: 0 40px;
 }
 
-/* Глобальное отключение перетаскивания для всех картинок */
 img {
-  user-drag: none;
   -webkit-user-drag: none;
   user-select: none;
   -webkit-user-select: none;
   -webkit-touch-callout: none;
-  pointer-events: auto; /* картинки остаются кликабельными */
+  pointer-events: auto; 
 }
 
-/* Ссылки */
 a {
   transition: opacity 0.2s ease;
   max-width: 100%;
@@ -48,7 +43,6 @@ a:hover {
   opacity: 0.7;
 }
 
-/* Кнопки магазинов — с эффектами */
 .store-photo {
   pointer-events: auto;
   transition: transform 0.25s ease, filter 0.25s ease;
@@ -60,7 +54,6 @@ a:hover {
   filter: brightness(1.1);
 }
 
-/* Фиолетовый блок */
 .purple-rect {
   transition: transform 0.25s ease, box-shadow 0.25s ease;
 }
@@ -70,7 +63,6 @@ a:hover {
   box-shadow: 0 8px 20px rgba(0,0,0,0.15);
 }
 
-/* Анимация подчеркивания в хедере */
 .header-right a {
   position: relative;
   text-decoration: none;
@@ -91,7 +83,6 @@ a:hover {
   width: 100%;
 }
 
-/* Глобальные сбросы */
 * {
   margin: 0;
   padding: 0;
@@ -123,10 +114,9 @@ body {
   padding: 0 40px;
 }
 
-/* HEADER */
 .header {
-  height: 88px;
-  background-color: #ffffff;
+  height: 100px;
+  background-color: #FAF8FE;
 
   display: flex;
   align-items: center;
@@ -176,9 +166,8 @@ body {
   font-weight: 500;
 }
 
-/* БЛОК 1 */
 .block-1 {
-  height: 560px;
+  height: 1080px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -194,34 +183,36 @@ body {
 }
 
 .block1-content {
-  max-width: 1300px;
+  max-width: 852px;
 }
 
 .title {
   font-family: 'Aclonica', sans-serif;
   font-size: 128px;
   text-transform: none;
-  color: #0b1a1f;
+  color: #6635E4;
   line-height: 0.9;
   margin-bottom: 30px;
 }
 
 .block1-sub {
-  font-size: 32px;
+  font-size: 48px;
   color: #2c4856;
-  margin-bottom: 35px;
+  margin-bottom: 56px;
+  font-weight: 600;
+  line-height: 1;
 }
 
 .block1-banner {
   font-family: 'Onest';
   border-radius: 100px;
-  font-size: 24px;
+  font-size: 32px;
   font-weight: 600;
   color: var(--primary-dark);
   display: inline-block;
+  line-height: 1;
 }
 
-/* БЛОК 2 */
 .block-2 {
   background-color: var(--primary-purple);
   color: var(--text-light);
@@ -234,6 +225,7 @@ body {
 .block2-title {
   font-family: 'Onest', sans-serif;
   font-size: 64px;
+  font-weight: 600;
   margin-bottom: 10px;
 }
 
@@ -245,14 +237,18 @@ body {
 
 .block2-sub {
   font-family: 'Onest', sans-serif;
-  font-size: 28px;
+  font-size: 56px;
   opacity: 0.9;
+  line-height: 1;
+  max-width: 1000px;
+  font-weight: 200;
   margin-bottom: 60px;
 }
 
 .block2-flex {
   display: flex;
   align-items: flex-start;
+  flex-direction: row;
 }
 
 .phone-mock {
@@ -260,13 +256,15 @@ body {
   height: auto;
   margin-top: 64px;
   margin-left: 5vw;
+  padding-top: 0vw;
 }
 
 .mascot-area {
   display: flex;
   flex-direction: column;
-  align-items: flex-end;
+  align-items: center;
   flex: 1;
+  gap: 40px;
 }
 
 .mascot-photo {
@@ -278,13 +276,12 @@ body {
 .mascot-text {
   font-family: 'Onest', sans-serif;
   text-align: right;
-  font-size: 32px;
+  font-size: 40px;
   max-width: 800px;
-  padding: 60px;
-  border-radius: 60px;
+  line-height: 1;
+  font-weight: 300;
 }
 
-/* БЛОК 3 */
 .block-3 {
   background: #ffffff;
   padding-top: 50px;
@@ -394,7 +391,6 @@ body {
   height: auto;
 }
 
-/* БЛОК 4 */
 .block-4 {
   background-color: var(--primary-purple);
   color: var(--text-light);
@@ -437,7 +433,6 @@ body {
   opacity: 0.9;
 }
 
-/* КАРУСЕЛЬ */
 .carousel-container {
   width: 100%;
   margin-top: 40px;
@@ -519,7 +514,6 @@ body {
   transform: scale(1.2);
 }
 
-/* БЛОК 5 */
 .block-5 {
   background: #ffffff;
   padding-top: 60px;
@@ -606,7 +600,6 @@ body {
   display: table;
 }
 
-/* ФОРМА ОБРАТНОЙ СВЯЗИ */
 .feedback-section {
   background: var(--primary-purple);
   padding: 56px 0 56px;
@@ -706,7 +699,6 @@ body {
   box-shadow: 0 18px 28px -8px rgba(102, 53, 228, 0.4);
 }
 
-/* FOOTER */
 .footer {
   background-color: #ffffff;
   color: var(--accent-color);
@@ -812,3 +804,4 @@ body {
 .custom-modal-close:hover {
   transform: scale(1.1);
 }
+
