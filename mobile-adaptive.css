@@ -597,6 +597,10 @@ img {
 
 
 @media (max-width: 480px) {
+    .body{
+        overflow-x: false;
+    }
+    
     .container {
         padding: 0 15px;
     }
