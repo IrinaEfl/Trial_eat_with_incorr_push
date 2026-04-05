@@ -24,23 +24,23 @@ async function loadCarouselData() {
       console.log('Данные загружены:', data); 
       carouselData = data;
     } else {
-      console.log('Нет данных, используем локальные');
-      // Запасной вариант
+      console.log('Таблица пуста, используем резервные URL из Supabase Storage');
+      // Используем прямые ссылки на Supabase Storage, а не локальные пути
       carouselData = [
         {
-          image_url: "images/v368_430.png",
+          image_url: "https://ffljujqajzuomxmcaflg.supabase.co/storage/v1/object/public/carousel-img/v368_430.png",
           title: "Tacoland",
           rating: "5.0",
           reviews: 203
         },
         {
-          image_url: "images/v368_428.png",
+          image_url: "https://ffljujqajzuomxmcaflg.supabase.co/storage/v1/object/public/carousel-img/v368_428.png",
           title: "Tokyo City",
           rating: "4.9",
           reviews: 188
         },
         {
-          image_url: "images/v368_435.png",
+          image_url: "https://ffljujqajzuomxmcaflg.supabase.co/storage/v1/object/public/carousel-img/v368_435.png",
           title: "Зодиак",
           rating: "4.8",
           reviews: 175
@@ -49,23 +49,23 @@ async function loadCarouselData() {
     }
     renderCarousel();
   } catch (error) {
-    console.error('Ошибка загрузки:', error);
-    
+    console.error('Ошибка загрузки из Supabase:', error);
+    // Тоже используем прямые ссылки на Supabase Storage
     carouselData = [
       {
-        image_url: "images/v368_430.png",
+        image_url: "https://ffljujqajzuomxmcaflg.supabase.co/storage/v1/object/public/carousel-img/v368_430.png",
         title: "Tacoland",
         rating: "5.0",
         reviews: 203
       },
       {
-        image_url: "images/v368_428.png",
+        image_url: "https://ffljujqajzuomxmcaflg.supabase.co/storage/v1/object/public/carousel-img/v368_428.png",
         title: "Tokyo City",
         rating: "4.9",
         reviews: 188
       },
       {
-        image_url: "images/v368_435.png",
+        image_url: "https://ffljujqajzuomxmcaflg.supabase.co/storage/v1/object/public/carousel-img/v368_435.png",
         title: "Зодиак",
         rating: "4.8",
         reviews: 175
