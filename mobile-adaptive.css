@@ -78,34 +78,64 @@
 
 /* ОТ 1040px ДО 933px */
 @media (max-width: 1040px) {
-    .bonus-action-wrapper {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        gap: 30px;
-    }
-    
-    .phone-mock {
-        width: 70%;
-        max-width: 450px;
-    }
-    
-    .mascot-photo {
-        max-width: 400px;
-    }
-    
-    .mascot-text {
-        font-size: 28px;
-    }
-    
-    .block2-sub {
-        font-size: 32px;
-    }
-    .two-photos{
-        margin-bottom: 24px;
-    }
+    .bonus-action-wrapper {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+    }
+    
+    .block1-content {
+  max-width: 800px;
+  height: 400px;
+}
+    .phone-mock {
+        width: 70%;
+        max-width: 450px;
+    }
+    
+    .mascot-photo {
+        max-width: 400px;
+    }
+    
+    .mascot-text {
+        font-size: 28px;
+    }
+    
+    .block2-sub {
+        font-size: 32px;
+    }
+
+    .block5-left h2 {
+  font-size: 34px;
+  font-weight: 700;
+  margin-bottom: 15px;
 }
 
+.block5-left h3 {
+  font-size: 32px;
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+
+.phone-mock-right {
+  width: auto;
+  height: 0px;
+  position: absolute;
+  right: 0px;
+  top: 1px;
+}
+
+.mascot-bottom {
+  width: 424px;
+  height: auto;
+  position: absolute;
+  top: 32px;
+  left: 640px;
+  z-index: 6;
+}
+
+}
 /* ОТ 933px ДО 870px */
 @media (max-width: 933px) {
     .phone-mock {
