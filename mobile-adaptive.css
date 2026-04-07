@@ -1,4 +1,16 @@
-.block1-content {
+/* ===== АДАПТИВ 870 ===== */
+
+@media (min-width: 1240px) {
+
+    .small-photo{
+      padding-bottom: 24px;
+    }
+    .mascot-photo {
+        width: 550px;
+        height: auto;
+    }
+
+    .block1-content {
   max-width: 680px;
   height: 400px;
 }
@@ -36,3 +48,887 @@
   display: inline-block;
   line-height: 1;
 }
+  }
+
+@media (max-width: 1240px) {
+  
+    
+  
+    .mascot-bottom {
+        position: relative;  /* или static */
+        width: 400px;
+        height: auto;
+        margin: 10hv auto;
+        display: block;
+    }
+
+    .small-photo{
+      padding-bottom: 24px;
+    }
+
+.mascot-photo {
+    margin-right: 32vw;
+    width: 550px;
+    height: auto;
+  }
+
+    .mascot-text {
+        text-align: left;
+    }
+
+  .phone-mock {
+    padding-top: 30vw;
+  }
+  .two-photos{
+    gap: 40px;
+  }
+  .bonus-action-wrapper {
+    flex-wrap: nowrap;
+  }
+  .purple-rect {
+    font-size: 28px;
+    padding: 24px 32px;
+}
+.partner-row {
+        grid-template-columns: repeat(4, 1fr);
+        gap: 20px;
+    }
+    
+    .partner-name {
+        font-size: 24px;
+    }
+    
+    .partner-time {
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 1404px) {
+    .bonus-action-wrapper {
+        flex-wrap: nowrap;
+    }
+   
+}
+@media (max-width: 1040px) {
+    .bonus-action-wrapper {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+    }
+}
+@media (max-width: 1180px) {
+  .mascot-bottom {
+        position: relative;  /* или static */
+        width: 400px;
+        height: auto;
+        display: block;
+        left: -500px;
+        padding-top: 30px;
+    }
+
+  .phone-mock-right {
+     width: 70vw;  /* 50% от ширины окна браузера */
+    height: 55vw;
+    margin-top: 10vh;
+  }
+
+  .mascot-text {
+        text-align: left;
+    }
+
+    
+ .mascot-photo {
+    margin-right: 32vw;
+    width: 550px;
+    height: auto;
+  }
+  .small-photo{
+    width: 200px;
+  }
+
+
+}
+
+
+@media (max-width: 1150px) {
+     .mascot-photo {
+        height: 200px;
+        width: auto;
+    
+    }
+    .mascot-text {
+        text-align: left;
+    }
+
+    
+  .mascot-photo {
+    margin-right: 32vw;
+    width: 550px;
+    height: auto;
+  }
+
+     .phone-mock {
+    max-width: 60%;
+    padding-top: 25vw;
+    padding-left: 5vw;
+  }
+
+  
+  }
+
+@media (max-width: 933px) {
+  .mascot-bottom {
+        position: relative;  /* или static */
+        width: 300px;
+        height: auto;
+        display: block;
+        padding-top: 100px;
+        left: -400px;
+    }
+
+    .phone-mock-right {
+     width: 70vw;  /* 50% от ширины окна браузера */
+    height: 55vw;
+    margin-top: 10vh;
+  }
+
+.mascot-photo {
+    margin-right: 32vw;
+    width: 550px;
+    height: auto;
+  }
+
+  .phone-mock {
+    max-width: 60%;
+    padding-top: 31.5vw;
+  }
+
+   
+    .mascot-text {
+        text-align: left;
+    }
+    .partner-row {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+    
+    .partner-photo {
+        height: 160px;
+    }
+    
+    .partner-name {
+        font-size: 22px;
+        white-space: normal;
+        word-break: break-word;
+    }
+    
+    .partner-time {
+        font-size: 18px;
+    }
+
+}
+
+/* ===== АДАПТИВ 870px ===== */
+@media (max-width: 870px) {
+    .container {
+        padding: 0 30px;
+    }
+    
+    .title {
+        font-size: 72px;
+    }
+    body {
+        overflow-x: hidden;
+    }
+    
+    .block2-title {
+        font-size: 32px;
+    }
+    
+    .block3-title,
+    .block4-title {
+        font-size: 32px;
+    }
+    
+    .store-photo {
+        width: 140px;
+    }
+
+    .footer-container {
+      padding-top: 40px;
+    }
+
+    .footer-copyright {
+    top: 17ch;
+}
+    .mascot-bottom {
+        position: relative;  /* или static */
+        width: 300px;
+        left: -400px;
+        height: auto;
+        margin: 1vh auto;
+        display: block;
+    }
+
+     .phone-mock-right {
+     width: 70vw;  /* 50% от ширины окна браузера */
+    height: 55vw;
+    margin-top: 10vh;
+  }
+
+  .phone-mock {
+    max-width: 60%;
+    padding-top: 40vw;
+    margin-bottom: 0%;
+    padding-left: 0%;
+
+  }
+
+ 
+   .mascot-photo {
+    margin-right: 32vw;
+    width: 550px;
+    height: auto;
+  }
+
+ .mascot-area {
+        margin-right: 20px;
+        order: 1;
+        margin-right: 0%;
+    }
+    .two-photos{
+        margin-bottom: 16px;
+    }
+    .carousel-container {
+        overflow-x: visible;
+        width: 100%;
+    }
+    
+    .carousel-track {
+        justify-content: center;
+        gap: 15px;
+    }
+    
+    .carousel-slide:not(.active) img {
+        width: 180px;
+        height: 180px;
+    }
+    
+    .active img {
+        width: 400px;
+        height: 260px;
+    }
+}
+
+
+/* ===== АДАПТИВ 800px (ОСНОВНОЙ) ===== */
+@media (max-width: 800px) {
+    .container {
+        padding: 0 25px;
+        max-width: 100%;
+    }
+    
+    /* Шапка */
+    .header-container {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+        padding-top: 2vw;
+    }
+    
+    .header-left {
+        order: 1;
+    }
+    
+    .store-badges {
+        order: 2;
+    }
+    
+    .header-right {
+        order: 3;
+        display: flex;
+        gap: 20px;
+    }
+    
+    .header-right a {
+        font-size: 16px;
+    }
+    
+    .site-name {
+        font-size: 28px;
+    }
+    
+    .logo-photo {
+        width: 60px;
+        height: auto;
+    }
+    
+    .store-photo {
+        width: 120px;
+        height: auto;
+    }
+    
+    /* Блок 1 */
+    .block-1 {
+        height: auto;
+        min-height: 450px;
+        padding: 40px 0;
+    }
+    
+    .title {
+        font-size: 56px;
+    }
+    
+    .block1-sub {
+        font-size: 20px;
+    }
+    
+    .block1-banner {
+        font-size: 18px;
+    }
+    
+    /* Блок 2 */
+    .block2-header {
+        padding-top: 30px;
+    }
+    
+    .block2-title {
+        font-size: 32px;
+    }
+    
+    .block2-title span {
+        font-size: 32px;
+    }
+    
+    .block2-sub {
+        font-size: 18px;
+        margin-bottom: 30px;
+    }
+    
+    .block2-flex {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .phone-mock {
+        width: 280px;
+        margin-top: 0;
+        order: 2;
+    }
+    
+    .mascot-area {
+        align-items: center;
+        order: 1;
+        margin-right: 0%;
+    }
+    
+    .mascot-photo {
+    margin-right: 0vw;
+    width: 420px;
+    height: auto;
+  }
+    
+    .mascot-text {
+        font-size: 20px;
+        text-align: center;
+        padding: 20px;
+    }
+    
+    /* Блок 3 */
+    .block-3 {
+        padding-top: 30px;
+    }
+    
+    .block3-title {
+        font-size: 28px;
+        margin-bottom: 30px;
+        text-align: center;
+    }
+    
+    .cards-row {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+    
+    .card {
+        max-width: 400px;
+        width: 100%;
+    }
+    
+    .card-photo {
+        width: 80px;
+        height: 80px;
+    }
+    
+    .card-text {
+        font-size: 18px;
+    }
+    
+    .bonus-line {
+        font-size: 20px;
+        width: 100%;
+        text-align: center;
+    }
+    
+    .bonus-action-wrapper {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+    
+    .purple-rect {
+        font-size: 24px;
+        padding: 20px 30px;
+        min-width: auto;
+        text-align: center;
+    }
+    
+    .two-photos {
+        gap: 40px;
+    }
+    
+    .small-photo {
+        width: 180px;
+    }
+    
+    /* Блок 4 */
+    .block-4 {
+        padding: 30px 0 50px;
+    }
+    
+    .block4-title {
+        font-size: 28px;
+        text-align: center;
+    }
+    
+    .partner-row {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+        gap: 20px;
+        justify-items: center;
+    }
+    
+    .partner-card {
+        width: 100%;
+        max-width: 300px;
+        min-width: auto;
+    }
+    
+    .partner-photo {
+        height: 120px;
+    }
+    
+    .partner-name {
+        font-size: 20px;
+    }
+    
+    .partner-time {
+        font-size: 16px;
+    }
+    
+    .carousel-container {
+        margin-top: 30px;
+    }
+    
+    .carousel-btn {
+        width: 40px;
+        height: 40px;
+        font-size: 24px;
+    }
+    
+    .active img {
+        width: 300px;
+        height: 200px;
+    }
+    
+    .carousel-slide:not(.active) img {
+        width: 140px;
+        height: 140px;
+    }
+    
+    /* Блок 5 */
+    .block-5 {
+        padding-top: 30px;
+    }
+    
+    .block5-left {
+        float: none;
+        width: 100%;
+        text-align: center;
+    }
+    
+    .block5-left h2 {
+        font-size: 32px;
+    }
+    
+    .block5-left h3 {
+        font-size: 24px;
+    }
+    
+    .block5-left h3 span {
+        font-size: 24px;
+    }
+    
+    .block5-bonus {
+        font-size: 20px;
+        max-width: 100%;
+    }
+    
+    .two-photos-horizontal {
+        justify-content: center;
+        width: 100%;
+    }
+    
+    .block5-right {
+        float: none;
+        width: 100%;
+        min-height: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .phone-mock-right {
+        position: static;
+        width: 250px;
+        height: auto;
+        margin-top: 20px;
+    }
+
+    .phone-mock {
+      width: 110%;
+      padding: 10px 0px 0px 0px;
+    }
+    
+    .mascot-bottom {
+        position: static;
+        width: 200px;
+        height: auto;
+        margin: 0 auto;
+    }
+    
+    /* Форма */
+    .feedback-section {
+        margin-top: 0;
+        padding: 40px 0;
+    }
+    
+    .feedback-header h2 {
+        font-size: 28px;
+    }
+    
+    .feedback-form-wrapper {
+        padding: 30px 25px;
+    }
+    
+    .submit-btn {
+        padding: 12px 30px;
+        font-size: 18px;
+    }
+
+  
+    
+    
+    /* Футер */
+    .footer-container {
+        flex-wrap: wrap;
+        gap: 20px;
+        justify-content: center;
+        text-align: center;
+        padding-bottom: 50px;
+        margin-top: 20px;
+        padding-top: 10px;
+    }
+    
+    .footer-left,
+    .footer-center,
+    .footer-right {
+        width: 100%;
+        justify-content: center;
+    }
+    
+    .footer-right {
+        text-align: center;
+    }
+    
+    .footer-center a,
+    .footer-right a {
+        font-size: 16px;
+    }
+
+      .footer-copyright {
+    top: 30ch;
+}
+
+
+
+}
+
+/* ===== АДАПТИВ 600px ===== */
+@media (max-width: 600px) {
+    .partner-row {
+        grid-template-columns: 1fr;
+    }
+    
+    .header-container{
+        padding-top: 2vw;
+    }
+
+    .title {
+        font-size: 44px;
+    }
+    /*.carousel-slide {
+    flex-shrink: 0;  /* запрещаем сжатие слайдов 
+    }
+
+    .active {
+        flex-shrink: 0;
+        width: 280px;
+    }
+    .carousel-btn{
+        display: none !important;
+    }
+    .carousel-slide:not(.active) {
+        flex-shrink: 0;
+        width: 100px;
+    }*/
+    .block1-sub {
+        font-size: 18px;
+    }
+    
+    .block2-title,
+    .block2-title span {
+        font-size: 28px;
+    }
+    
+    .purple-rect {
+        font-size: 18px;
+        padding: 15px 20px;
+    }
+    
+    .small-photo {
+        width: 140px;
+    }
+    
+    .partner-row {
+        grid-template-columns: 1fr;
+        gap: 0;
+    }
+    .partner-card{
+        border-radius: 16px;
+        margin-bottom: 0;
+    }
+    
+    .carousel-container {
+        overflow: hidden;
+        width: 100%;
+        padding: 0;
+    }
+    
+    .carousel-slide {
+        flex-shrink: 0;
+    }
+    
+    .active {
+        flex-shrink: 0;
+        width: 280px;
+    }
+    
+    .carousel-btn {
+        display: none !important;
+    }
+    
+    .carousel-slide:not(.active) {
+        flex-shrink: 0;
+        width: 100px;
+    }
+
+    .mascot-photo {
+    margin-right: 5vw;
+    width: 350px;
+    height: auto;
+  }
+    
+}
+
+/* ===== АДАПТИВ 480px ===== */
+@media (max-width: 480px) {
+    .container {
+        padding: 0 15px;
+    }
+
+    .header-container{
+        padding-top: 2vw;
+        max-height: 30vw;
+    }
+    
+    .title {
+        font-size: 36px;
+    }
+    
+    .block1-sub {
+        font-size: 16px;
+    }
+    
+    .block1-banner {
+        font-size: 14px;
+    }
+    
+    .store-photo {
+        width: 100px;
+    }
+    
+    .mascot-photo {
+        height: 150px;
+    }
+    
+    .mascot-text {
+        font-size: 16px;
+    }
+    
+    .card-text {
+        font-size: 16px;
+    }
+    
+    .bonus-line {
+        font-size: 16px;
+    }
+    
+    .block5-left h2 {
+        font-size: 24px;
+    }
+    
+    .block5-left h3 {
+        font-size: 20px;
+    }
+    
+    .phone-mock-right {
+        width: 200px;
+    }
+    
+    .feedback-header h2 {
+        font-size: 22px;
+    }
+    
+    .submit-btn {
+        padding: 5px;
+        font-size: 16px;
+    }
+    
+    .footer-center a,
+    .footer-right a {
+        font-size: 14px;
+
+    }
+
+    .mascot-photo {
+        align-self: center;
+        width: 250px;
+        height: auto;
+        margin-right: 0px;
+        margin-bottom: 0px;
+    }
+    .mascot-text {
+        padding: 0px;
+        margin-bottom: 16px;
+    }
+    .block3-title {
+        line-height: 1;
+    }
+    .small-photo {
+        width: 200px;
+    }
+    .footer-copyright {
+        top: 26ch;
+    }}
+  @media (max-width: 480px) {
+    .two-photos{
+        display: flex;
+        flex-direction: column;
+        gap: 4px;
+    }
+    .purple-rect{
+        margin-bottom: 8px;
+    }
+    .partner-photo {
+        margin-bottom: 8px;
+    }
+    
+    .carousel-track {
+        gap: 8px;
+    }
+    
+    .carousel-slide {
+        flex-shrink: 0;
+    }
+    
+    .active {
+        flex-shrink: 0;
+        width: 240px;
+    }
+    
+    .carousel-slide:not(.active) {
+        flex-shrink: 0;
+        width: 80px;
+    }
+    
+    .slide-caption {
+        font-size: 10px;
+    }
+    
+    .carousel-slide:not(.active) .slide-caption {
+        display: none;
+    }
+    .block-1 {
+        height: auto;
+        min-height: 672px;
+    }
+    .header{
+        height: auto;
+        padding-bottom: 16vw;
+    }
+    .title {
+        font-size: 48px;
+    }
+    .block1-sub{
+        font-size: 24px;
+        line-height: 1;
+        font-weight: 400;
+    }
+    .block1-banner{
+        font-size: 20px;
+        line-height: 1;
+        font-weight: 400;
+    }
+    .block2-title{
+        align-self: center;
+    }
+    .form-footer {
+        display: flex;
+        justify-content: center;
+        margin-top: 20px;
+    }
+    .submit-btn {
+        padding: 16px;
+        font-size: 16px;
+    }
+    .block5-left h2 {
+        font-size: 28px;
+    }
+    .feedback-header h2 {
+        font-size: 28px;
+        align-self: center;
+        text-align: center;
+        line-height: 1;
+    }
+    .two-photos-horizontal {
+        display: flex;
+        gap: 16px;
+        width: 400px;
+        align-self: center;
+    }
+    
+  }
